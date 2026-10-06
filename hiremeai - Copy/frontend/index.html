@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Swarup Banerjee: ask his CV</title>
+  <meta name="description" content="Ask questions about Swarup Banerjee's projects, skills and education. Answers come from his CV.">
+  <meta name="theme-color" content="#0E2A47">
+  <meta property="og:title" content="Swarup Banerjee: ask his CV">
+  <meta property="og:description" content="Ask about projects, skills, education and certifications. Answers come only from the CV.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230E2A47'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23FFB547'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app" id="app">
+    <div class="scroll" id="scroll">
+      <main class="column">
+        <div class="statusbar">
+          <div class="status">
+            <span class="led" aria-hidden="true"></span>
+            <span id="statusText">Ready</span>
+          </div>
+          <button type="button" class="link-btn" id="clearBtn" hidden>Clear chat</button>
+        </div>
+
+        <header class="title">
+          <h1>Swarup Banerjee</h1>
+          <p class="role">B.Tech CSE student in Kolkata, looking for a software development internship.</p>
+          <p class="note">Ask about projects, skills, education or certifications. Answers come only from Swarup's CV.</p>
+          <noscript><p class="note">Turn on JavaScript to chat with this assistant.</p></noscript>
+        </header>
+
+        <ul class="starters" id="starters" aria-label="Suggested questions">
+          <li><button type="button" class="starter">What projects has Swarup built?</button></li>
+          <li><button type="button" class="starter">Which technologies and tools does Swarup use?</button></li>
+          <li><button type="button" class="starter">What is Swarup's education and which certifications does he hold?</button></li>
+          <li><button type="button" class="starter">What kind of role is Swarup looking for?</button></li>
+          <li><button type="button" class="starter">How can I contact Swarup?</button></li>
+        </ul>
+
+        <div id="log" role="log" aria-live="polite" aria-label="Conversation"></div>
+      </main>
+    </div>
+
+    <footer class="composer">
+      <div class="composer-inner">
+        <form class="form" id="form" autocomplete="off">
+          <label class="sr-only" for="input">Your question</label>
+          <textarea class="input" id="input" rows="1" maxlength="500" placeholder="Ask about Swarup's background" enterkeyhint="send"></textarea>
+          <button type="submit" class="send" id="send" disabled>Send</button>
+        </form>
+        <p class="fineprint">
+          <span>AI-generated from the CV. Confirm important details with Swarup directly.</span>
+          <span id="count" hidden></span>
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
