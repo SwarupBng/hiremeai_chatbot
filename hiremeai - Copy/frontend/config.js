@@ -3,4 +3,4 @@
 // Example: window.HIREME_API_URL = "https://hiremeai.onrender.com";
 //
 // On localhost the page automatically talks to http://localhost:8000.
-window.HIREME_API_URL = "https://YOUR-BACKEND.onrender.com";
+window.HIREME_API_URL = "   https://hiremeai-chatbot-2zt3.onrender.com";
